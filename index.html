@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Taskmaster Pro</title>
 </head>
@@ -16,12 +18,11 @@
   <div class="row min-vh-100 no-gutters">
     <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
       <h1 class="text-center">Taskmaster Pro Edition</h1>
-      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
-        Task</button>
-      <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Tasks</button>
-      <p class="mt-auto d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-        excepturi aut non
-        laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
+      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">
+        <span class="oi oi-plus mr-2"></span>Add Task
+      </button>
+      <button id="remove-tasks" class="btn btn-block btn-danger"><span class="oi oi-trash"></span> Delete All Tasks</button>
+      <p class="mt-auto d-none d-lg-block made-by"> Made By Emili0
       </p>
     </header>
     <main class="col-12 col-lg-9 d-flex flex-column">
@@ -70,7 +71,7 @@
 
       <div id="trash" class="mt-auto">
         <div class="w-100 bg-danger p-3 text-center text-light display-4">
-          Drop Here to Remove.
+          <span class="oi oi-trash"></span> Drop Here to Remove.
         </div>
       </div>
 
